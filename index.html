@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Story ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="hearts" id="hearts"></div>
+  <div class="background-video">
+  <video autoplay muted loop playsinline>
+    <source src="./Love-video.mp4" type="video/mp4">
+  </video>
+</div>
+  <button id="musicBtn" class="music-btn">
+    🎵 Play Music
+  </button>
+
+  <audio id="music" loop>
+    <source src="romantic.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="container">
+
+    <section id="questionScreen" class="screen">
+      <div class="heart-icon">💗</div>
+
+      <h1>Hey, My Special Person!</h1>
+      <p class="subtitle">
+        I have a special question for you...
+      </p>
+
+      <h2>Do You Love Me? 🥺</h2>
+      
+      <div class="buttons">
+        <button id="yesBtn" class="yes-btn">
+          YES ❤️
+        </button>
+
+        <button id="noBtn" class="no-btn">
+          NO 💔
+        </button>
+      </div>
+
+      <p id="noMessage" class="no-message"></p>
+    </section>
+
+    <section id="nameScreen" class="screen hidden">
+      <div class="heart-icon">💕</div>
+      <h1>Congratulations!</h1>
+      <p>Let's create your beautiful love story ❤️</p>
+
+      <input
+        type="text"
+        id="boyName"
+        placeholder="Enter Boy Name"
+        maxlength="30"
+      >
+
+      <input
+        type="text"
+        id="girlName"
+        placeholder="Enter Girl Name"
+        maxlength="30"
+      >
+
+      <button id="createBtn" class="yes-btn">
+        Create Our Love Story 💖
+      </button>
+
+      <p id="errorMessage"></p>
+    </section>
+
+    <section id="finalScreen" class="screen hidden">
+      <div class="heart-icon">💞</div>
+      <h1>Congratulations! 🎉</h1>
+
+      <h2 id="coupleNames"></h2>
+
+      <p>
+        Two hearts, one beautiful story! ❤️
+      </p>
+
+      <p class="final-message">
+        May your story always be filled with happiness 💗
+      </p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
